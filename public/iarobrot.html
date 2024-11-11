@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IA ROTROT</title>
+    <link rel="stylesheet" href="stylesrobrot.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=M+PLUS+Rounded+1c&family=Advent+Pro&family=Afacad&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/remixicon@2.5.0/fonts/remixicon.css"
+    />
+  </head>
+  <body>
+    <!-- MENU -->
+    <nav class="topheader">
+      <a href="index.html" class="logo">
+        <img height="80" width="120" src="img/logo2.png" alt="" />
+      </a>
+
+      <ul class="menu-horizontal">
+        <li>
+          <a href="index.html" class="home-link">HOME</a>
+        </li>
+        <li>
+          <a href="index.html#Servicios">SERVICIOS</a>
+        </li>
+        <li>
+          <a href="index.html#Nosotros">NOSOTROS</a>
+        </li>
+        <li>
+          <a href="soporte.html#Soporte">SOPORTE</a>
+        </li>
+      </ul>
+
+      <div class="nav_actions">
+        <div class="search-container">
+          <input type="search" placeholder="Buscar" />
+          <i class="ri-search-line" id="search_btn"></i>
+        </div>
+        <div class="account-container">
+          <a href="login.html">
+            <i class="ri-account-circle-line" id="account_btn"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="chat-container">
+      <div id="bot-image">
+        <img src="img/robrot.png" />
+      </div>
+      <div id="messages"></div>
+      <form id="chat-form">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Escribe tu mensaje aquí"
+        />
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <script src="chat.js"></script>
+  </body>
+</html>
