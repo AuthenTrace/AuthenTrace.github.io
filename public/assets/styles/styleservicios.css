@@ -1,0 +1,247 @@
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+    color: #333;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Encabezado */
+  .topheader {
+    margin-top: 0px;
+    position: fixed;
+    background-color: #ffd0d0;
+    width: 97.5%;
+    z-index: 100;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /*flex-start para alinear mas al logo */
+    padding: 0px 20px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    font-weight: 400;
+    color: #161a1d;
+  }
+  
+  .menu-horizontal li a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Estilo para el botón de iniciar sesión */
+  .menu-horizontal .iniciar-sesion-link {
+    background-color: #8b0000;
+    color: #fff; /* texto blanco */
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  .menu-horizontal li a:hover {
+    color: #ba181b;
+  }
+  
+  .menu-horizontal li:hover .menu-vertical {
+    display: block;
+  }
+  
+  /* Sección de Servicios */
+  .servicios-section {
+    background-color: #b90924;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+  }
+  
+  .servicios-section h1 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .servicios-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card i {
+    font-size: 24px;
+    color: #b90924;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+  }
+  
+  /* Sección de Firma */
+  .firma-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f3f3f3;
+  }
+  
+  .firma-content {
+    max-width: 50%;
+    padding-left: 100px;
+  }
+  
+  .firma-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .firma-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-probar {
+    background-color: #d80a27;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .firma-preview img {
+    padding-right: 40px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Sección footer */
+  
+  .footer-section {
+    background: #263238;
+    padding: 25px;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  
+  .footer-column {
+    flex: 25%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  .footer-column h3 {
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 13px;
+  }
+  
+  .footer-column ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #d0d0d0;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #fff;
+    padding-left: 6px;
+  }
+  
+  .social-link a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-link a:hover {
+    color: #00c3ff;
+  }
+  
+  .footer-column.newsletter {
+    margin-bottom: 30px; /* Espacio debajo del newsletter */
+    text-align: center; /* Centrar el contenido */
+    color: #d0d0d0;
+    justify-content: left;
+  }
+  
+  .footer-column.newsletter p {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column.newsletter input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  
+  .footer-column.newsletter button {
+    padding: 10px 20px;
+    background-color: #ffa07a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  
+  .footer-column.newsletter button:hover {
+    background-color: #0091b3;
+  }
+  
