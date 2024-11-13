@@ -71,7 +71,7 @@ html {
 }
 
 body {
-  background-image: url("../images/challenge.png");
+  background-image: url("../assets/images/challenge.png");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
