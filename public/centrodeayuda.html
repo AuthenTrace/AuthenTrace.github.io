@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Centro de Ayuda</title>
+    <link rel="stylesheet" href="stylesayuda.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=M+PLUS+Rounded+1c&family=Advent+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/remixicon@2.5.0/fonts/remixicon.css"
+    />
+  </head>
+  <body>
+    <!-- MENU -->
+    <nav class="topheader">
+      <a href="index.html" class="logo">
+        <img height="80" width="120" src="img/logo2.png" alt="" />
+      </a>
+
+      <ul class="menu-horizontal">
+        <li>
+          <a href="index.html" class="home-link">HOME</a>
+        </li>
+        <li>
+          <a href="index.html#Servicios">SERVICIOS</a>
+        </li>
+        <li>
+          <a href="index.html#Nosotros">NOSOTROS</a>
+        </li>
+        <li>
+          <a href="soporte.html#Soporte">SOPORTE</a>
+        </li>
+      </ul>
+
+      <div class="nav_actions">
+        <div class="search-container">
+          <input type="search" placeholder="Buscar" />
+          <i class="ri-search-line" id="search_btn"></i>
+        </div>
+        <div class="account-container">
+          <a href="login.html">
+            <i class="ri-account-circle-line" id="account_btn"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Centro de Ayuda de AuthenTrace</h1>
+      <p>
+        Encuentra respuestas a preguntas comunes, guías y tutoriales para
+        ayudarte a aprovechar al máximo AuthenTrace.
+      </p>
+    </header>
+
+    <section class="faq-section">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">
+          ¿Cómo puedo registrarme en AuthenTrace?
+        </h3>
+        <p class="answer">
+          Para registrarte, simplemente visita nuestra página de inicio y haz
+          clic en "Registrarse". Completa los datos requeridos y sigue las
+          instrucciones.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">¿Cómo recuperar mi contraseña?</h3>
+        <p class="answer">
+          Puedes recuperar tu contraseña desde la página de inicio de sesión
+          haciendo clic en "¿Olvidaste tu contraseña?" y siguiendo las
+          instrucciones.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">¿Qué documentos puedo autenticar?</h3>
+        <p class="answer">
+          AuthenTrace permite la autenticación de documentos como contratos,
+          acuerdos, y cualquier documento oficial que requiera una firma válida.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">
+          ¿AuthenTrace garantiza la seguridad de mis datos?
+        </h3>
+        <p class="answer">
+          Sí, implementamos cifrado de extremo a extremo y cumplimos con los
+          estándares de seguridad más altos para proteger tu información.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">
+          ¿Cómo contacto con soporte técnico?
+        </h3>
+        <p class="answer">
+          Puedes contactar con soporte técnico mediante el formulario en nuestra
+          página de "Soporte" o enviando un correo a soporte@authentrace.com.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">
+          ¿Qué hago si mi documento no se autentica correctamente?
+        </h3>
+        <p class="answer">
+          En caso de problemas con la autenticación, revisa las recomendaciones
+          en la sección de ayuda o contacta a soporte técnico.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">
+          ¿Puedo utilizar AuthenTrace en dispositivos móviles?
+        </h3>
+        <p class="answer">
+          Sí, AuthenTrace es compatible con dispositivos móviles y está
+          optimizado para su uso en diferentes plataformas.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">
+          ¿Cuáles son los requisitos mínimos del sistema?
+        </h3>
+        <p class="answer">
+          AuthenTrace funciona en cualquier navegador moderno. Para la mejor
+          experiencia, recomendamos Google Chrome o Safari actualizados.
+        </p>
+      </div>
+    </section>
+
+    <div class="tutorial-section">
+      <h2>Guías y Tutoriales</h2>
+      <div id="Tutorial">
+        <a href="" class="tutorial-item">
+          <img
+            src="img/icono_guia.png"
+            alt="Guía de Inicio"
+            class="tutorial-icon"
+          />
+          <h3>Guía de Inicio en AuthenTrace</h3>
+        </a>
+        <a href="" class="tutorial-item">
+          <img
+            src="img/icono_firma.png"
+            alt="Tutorial Firma Digital"
+            class="tutorial-icon"
+          />
+          <h3>Tutorial para Firmas Digitales</h3>
+        </a>
+        <a href="" class="tutorial-item">
+          <img
+            src="img/icono_seguridad.png"
+            alt="Consejos de seguridad"
+            class="tutorial-icon"
+          />
+          <h3>Consejos de Seguridad</h3>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        ¿No encuentras lo que buscas?
+        <a href="soporte.html">Contacta con nuestro equipo de soporte</a>.
+      </p>
+    </footer>
+
+    <!-- footer -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-column">
+          <p>Copyright ©2024 AuthenTrace</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="ayuda.js"></script>
+  </body>
+</html>

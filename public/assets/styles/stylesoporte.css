@@ -1,20 +1,20 @@
 .topheader {
   position: fixed;
-  top: 0;
+  top: 0; 
   background-color: #ffd0d0;
-  width: 97.5%;
+  width: 98%;
   z-index: 100;
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   padding: 0px 20px;
   font-family: "Inter", sans-serif;
 }
 
 .logo img {
-  width: 300px;
-  height: auto;
+  width: 300px; 
+  height: auto; 
   margin-right: 0;
 }
 
@@ -65,10 +65,11 @@
 /* Ajustes para el body */
 body {
   background-color: #ba181b;
-  background-size: cover;
-  background-position: center center;
+  background-size: cover; /* Cambia a 'cover' para cubrir el área sin estirarse */
+  background-position: center center; /* Cambia la posición para que empiece desde la parte superior */
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%; /* Cambia a 100vh para ajustar la altura del fondo */
+  width: 100%;
   margin: 0;
   overflow-x: hidden;
 }
@@ -93,7 +94,7 @@ body {
   padding: 2em;
   background-color: #d9d9d9;
   position: absolute;
-  right: 0;
+  right: 0; /* Alinea el formulario a la derecha de la pantalla */
   margin-top: 0px;
   margin-right: 50px;
   display: flex;
@@ -136,13 +137,13 @@ select {
 
 /* Opcional: Añadir un color de fondo para el select */
 select {
-  background-color: #fff;
+  background-color: #fff; /* Color de fondo */
 }
 
 /* Estilos adicionales para el select */
 select:focus {
-  border-color: #338af3;
-  outline: none;
+  border-color: #338af3; /* Color de borde al enfocar */
+  outline: none; /* Elimina el contorno predeterminado */
 }
 
 /* Botones */
@@ -171,14 +172,14 @@ select:focus {
 }
 
 .soporte-container {
-  display: flex;
-  align-items: flex-start;
+  display: flex; /* Aplica flexbox a este contenedor */
+  align-items: flex-start; /* Alinea los elementos al inicio */
 }
 
 .iconos {
   display: flex;
-  flex-direction: column;
-  margin-right: 60px;
+  flex-direction: column; /* Coloca las imágenes en columna */
+  margin-right: 60px; /* Espacio entre iconos y soporte */
 }
 
 .iconos img {
@@ -188,30 +189,30 @@ select:focus {
 
 .soporte-item {
   width: 25%; /* Ajusta el ancho según sea necesario */
-  background-color: #660708;
+  background-color: #fff;
   text-decoration: none;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  margin: 15px 0;
-  display: block;
+  margin: 15px 0; /* Espacio vertical entre los recuadros */
+  display: block; /* Mantiene el diseño en bloque */
   transition: transform 0.3s ease;
 }
 
 .soporte-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Animación al pasar el ratón */
 }
 
 .soporte-item i {
   font-size: 50px;
   margin-bottom: 15px;
-  color: #ba181b;
+  color: #ba181b; /* Color rojo para los íconos */
 }
 
 .soporte-item h3 {
   font-size: 1.25rem;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 10px;
   font-family: "Inter", sans-serif;
   font-weight: bolder;
@@ -219,7 +220,7 @@ select:focus {
 
 .soporte-item p {
   font-size: 0.75rem;
-  color: #ffffff;
+  color: #000000;
   font-family: "Inter";
 }
 
