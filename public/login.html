@@ -39,28 +39,29 @@
 
 <section class="form-section">
 
-  <!-- Radio Buttons para alternar entre las secciones -->
-  <input type="radio" id="toggle-register" name="toggle" checked />
-  <input type="radio" id="toggle-login" name="toggle" />
-
   <!-- Contenedor de los botones de alternancia y texto adicional -->
-<div class="toggle-buttons">
-  <!-- Etiquetas para los botones de alternancia -->
-  <label for="toggle-register">Crear Cuenta</label>
-  <label for="toggle-login">Iniciar Sesión</label>
+  <div class="toggle-buttons">
+    <!-- Etiquetas para los botones de alternancia -->
+    
+    <!-- Texto adicional debajo de los botones de alternancia -->
+    <div class="toggle-text">
+      <h3>Registro</h3>
+      <p>
+        Registrarse en este sitio le permite acceder al estado y al historial de su pedido.
+        Simplemente complete los campos a continuación y configuraremos una nueva cuenta para
+        usted en poco tiempo. Sólo te pediremos los datos necesarios para que el proceso de
+        compra sea más rápido y sencillo.
+      </p>
+    </div>
+    
+    <!-- Radio Buttons para alternar entre las secciones -->
+    <input type="radio" id="toggle-register" name="toggle" checked onchange="toggleForms()"/>
+    <input type="radio" id="toggle-login" name="toggle" onchange="toggleForms()"/>
+    
+    <label id="toggle-register-label" for="toggle-register" style="display: none;">Crear Cuenta</label>
+    <label id="toggle-login-label" for="toggle-login" hidden>Iniciar Sesión</label>
 
-  <!-- Texto adicional debajo de los botones de alternancia -->
-  <div class="toggle-text">
-    <h3>Registro</h3>
-    <p>
-      Registrarse en este sitio le permite acceder al estado y al historial de su pedido.
-      Simplemente complete los campos a continuación y configuraremos una nueva cuenta para
-      usted en poco tiempo. Sólo te pediremos los datos necesarios para que el proceso de
-      compra sea más rápido y sencillo.
-    </p>
   </div>
-  
-</div>
 
   <!-- Sección Crear Cuenta -->
   <div class="container-inscripcion" id="Inscripcion">
@@ -95,7 +96,7 @@
   </div>
 
   <!-- Sección Iniciar Sesión -->
-  <div class="login-container" id="Login">
+  <div class="login-container" id="Login" style="display: none;">
     <form name="form" method="post" action="">
       <fieldset>
         <legend>Iniciar Sesión</legend>
@@ -119,6 +120,28 @@
   </div>
 </section>
 
+
+<script>
+  function toggleForms() {
+        const registerForm = document.getElementById('Inscripcion');
+        const loginForm = document.getElementById('Login');
+        const isRegisterChecked = document.getElementById('toggle-register').checked;
+        const toggleRegisterLabel = document.getElementById('toggle-register-label');
+        const toggleLoginLabel = document.getElementById('toggle-login-label');
+        if (isRegisterChecked) {
+            registerForm.style.display = 'block';
+            loginForm.style.display = 'none';
+            toggleRegisterLabel.style.display = 'none';
+            toggleLoginLabel.style.display = 'block';
+        } else {
+            registerForm.style.display = 'none';
+            loginForm.style.display = 'block';
+            toggleLoginLabel.style.display = 'none';
+            toggleRegisterLabel.style.display = 'block';
+        }
+
+    }
+</script>
 
 </body>
 </html>

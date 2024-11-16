@@ -138,15 +138,6 @@ body {
 input[type="radio"] {
   display: none;
 }
-input[type="radio"]#toggle-register:checked ~ .container-inscripcion,
-input[type="radio"]#toggle-login:checked ~ .login-container {
-  display: block;
-}
-
-input[type="radio"]#toggle-register:checked ~ .login-container,
-input[type="radio"]#toggle-login:checked ~ .container-inscripcion {
-  display: none;
-}
 
 /* Opcional: Estilo personalizado para los labels */
 .toggle-buttons label {
