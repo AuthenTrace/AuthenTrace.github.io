@@ -38,62 +38,84 @@
 
 
 <section class="form-section">
-
-  <!-- Contenedor de los botones de alternancia y texto adicional -->
-  <div class="toggle-buttons">
-    <!-- Etiquetas para los botones de alternancia -->
+      <!-- Radio Buttons para alternar entre las secciones -->
+      <input type="radio" id="toggle-register" name="toggle" checked />
+      <input type="radio" id="toggle-login" name="toggle" />
     
-    <!-- Texto adicional debajo de los botones de alternancia -->
-    <div class="toggle-text">
-      <h3>Registro</h3>
-      <p>
-        Registrarse en este sitio le permite acceder al estado y al historial de su pedido.
-        Simplemente complete los campos a continuación y configuraremos una nueva cuenta para
-        usted en poco tiempo. Sólo te pediremos los datos necesarios para que el proceso de
-        compra sea más rápido y sencillo.
-      </p>
-    </div>
+      <!-- Contenedor de texto y botones de alternancia -->
+      <div class="toggle-buttons">
+        <!-- Texto adicional -->
+        <div class="toggle-text">
+          <h3>Registro</h3>
+          <p>
+            Registrarse en este sitio le permite acceder al estado y al historial de su pedido.
+            Simplemente complete los campos a continuación y configuraremos una nueva cuenta para
+            usted en poco tiempo. Sólo te pediremos los datos necesarios para que el proceso de
+            compra sea más rápido y sencillo.
+          </p>
+        </div>
     
-    <!-- Radio Buttons para alternar entre las secciones -->
-    <input type="radio" id="toggle-register" name="toggle" checked onchange="toggleForms()"/>
-    <input type="radio" id="toggle-login" name="toggle" onchange="toggleForms()"/>
+        <!-- Etiquetas para los botones de alternancia, ahora ubicadas debajo del texto -->
+        <label for="toggle-register" class="toggle-button">Crear Cuenta</label>
+        <label for="toggle-login" class="toggle-button">Iniciar Sesión</label>
+      </div>
     
-    <label id="toggle-register-label" for="toggle-register" style="display: none;">Crear Cuenta</label>
-    <label id="toggle-login-label" for="toggle-login" hidden>Iniciar Sesión</label>
-
-  </div>
-
-  <!-- Sección Crear Cuenta -->
-  <div class="container-inscripcion" id="Inscripcion">
-    <form name="form" method="post" action="">
-      <fieldset>
-        <legend>Crear Cuenta</legend>
-        <ul>
-          <li>
-            <label>Nombres:</label>
-            <input type="text" name="name" size="30" placeholder="NOMBRE*" />
-          </li>
-          <li>
-            <label>Apellidos:</label>
-            <input type="text" name="lastname" size="30" placeholder="APELLIDOS*" />
-          </li>
-          <li>
-            <label>Correo:</label>
-            <input type="text" name="correo" size="30" placeholder="CORREO ELECTRONICO*" />
-          </li>
-          <li>
-            <label>Contraseña:</label>
-            <input type="password" name="password" size="30" placeholder="CONTRASEÑA*" />
-          </li>
-          <li>
-            <input type="checkbox" name="noticias" value="yes" />
-            Sí, quiero recibir las últimas ofertas y noticias acerca de AuthenTrace
-          </li>
-        </ul>
-        <input type="submit" class="btn_submit" value="Registrarse" />
-      </fieldset>
-    </form>
-  </div>
+      <!-- Sección Crear Cuenta -->
+      <div class="container-inscripcion" id="Inscripcion">
+        <form name="register" method="post" action="">
+          <fieldset>
+            <legend>Crear Cuenta</legend>
+            <ul>
+              <li>
+                <label>Nombres:</label>
+                <input type="text" name="name" size="30" placeholder="NOMBRE*" />
+              </li>
+              <li>
+                <label>Apellidos:</label>
+                <input type="text" name="lastname" size="30" placeholder="APELLIDOS*" />
+              </li>
+              <li>
+                <label>Correo:</label>
+                <input type="text" name="correo" size="30" placeholder="CORREO ELECTRONICO*" />
+              </li>
+              <li>
+                <label>Contraseña:</label>
+                <input type="password" name="password" size="30" placeholder="CONTRASEÑA*" />
+              </li>
+              <li>
+                <input type="checkbox" name="noticias" value="yes" />
+                Sí, quiero recibir las últimas ofertas y noticias acerca de AuthenTrace
+              </li>
+            </ul>
+            <input type="submit" class="btn_submit" value="Registrarse" />
+          </fieldset>
+        </form>
+      </div>
+    
+      <!-- Sección Iniciar Sesión -->
+      <div class="login-container" id="Login">
+        <form name="login" method="post" action="">
+          <fieldset>
+            <legend>Iniciar Sesión</legend>
+            <ul>
+              <li>
+                <label>Correo Electrónico:</label>
+                <input type="text" name="email" size="30" placeholder="CORREO ELECTRONICO*" />
+              </li>
+              <li>
+                <label>Contraseña:</label>
+                <input type="password" name="password" size="30" placeholder="CONTRASEÑA*" />
+              </li>
+              <li>
+                <input type="checkbox" name="recordar" value="yes" />
+                Recordarme
+              </li>
+            </ul>
+            <input type="submit" class="btn_submit" value="Iniciar Sesión" />
+          </fieldset>
+        </form>
+      </div>
+    </section>
 
   <!-- Sección Iniciar Sesión -->
   <div class="login-container" id="Login" style="display: none;">
