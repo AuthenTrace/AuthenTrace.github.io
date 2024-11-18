@@ -482,6 +482,11 @@ body {
   color: darkblue;
 }
 
+.open-menu,
+.close-menu{
+  display: none;
+
+}
 
 /*Configuración para celular (Responsive)*/
 @media (max-width:768px) {
