@@ -3,11 +3,6 @@ html {
   width: 100%;
 }
 
-.open-menu,
-.close-menu{
-  display: none;
-
-}
 
 .topheader {
   position: fixed;
