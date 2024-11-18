@@ -489,121 +489,114 @@ body {
 }
 
 
-/*Configuración para celular (Responsive)*/
-@media (max-width:768px) {
-  .menu-horizontal{
+/*BOTONES PARA FORMATO MOVIL /*/
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .logo {
+    margin: 0 auto;
+  }
+
+  .topheader {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .nav_actions {
+    display: auto;
+    margin-left: -100px;
+    gap: 10px;
+  }
+
+  .search-container input {
+    display: none;
+  }
+
+  .open-menu {
+    display: block;
+    position: fixed; /* Asegura que el botón esté en una posición fija */
+    top: 35px; /* Ajusta según la posición vertical deseada */
+    left: 20px; /* Posiciona el botón en el extremo izquierdo */
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+    margin: 0; /* Remueve cualquier margen adicional */
+  }
+
+  /* Ajustes para el menú */
+  .menu-horizontal {
     flex-direction: column;
     position: fixed;
-    left: 0;
     top: 0;
-    width: 100%;
+    left: 0;
+    width: 95%;
     align-items: center;
-    background-color: #151326;
+    background-color: #e8ede3;
     height: 100%;
     overflow-y: auto;
     pointer-events: none;
     transform: translateY(-100%);
-    transition: opacity 0.3s transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
     z-index: 999;
   }
 
-  .menu-horizontal.menu_opened{
+  .menu-horizontal.menu_opened {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0);
   }
-  .menu-horizontal li{
+
+  .menu-horizontal li {
     padding: 0;
   }
-  .menu-horizontal a{
-    color: #ffffff;
+
+  .menu-horizontal a {
+    color: black;
     line-height: 70px;
     font-size: 25px;
     padding: 10px 0;
   }
   .menu-horizontal a:hover,
-  .menu-horizontal a.selected{
-    color: #6866cd;
+  .menu-horizontal a.selected {
+    color: blue;
     text-decoration: underline;
   }
 
-  .menu-horizontal a:focus{
-    outline: 2px dashed #decbf0;
+  .menu-horizontal a.select {
+  }
+  .menu-horizontal a:focus {
+    outline: 2px dashed blue;
     outline-offset: 4px;
   }
-  .menu-horizontal a::after{
+  .menu-horizontal a::after {
     content: none;
   }
-
-  /*configuración para que aparesca el menú*/
   .open-menu,
-  .close-menu{
+  .close-menu {
     display: block;
     border: none;
     background: none;
     cursor: pointer;
-    z-index: 10000;
+    z-index: 1000;
     margin-right: 30px;
   }
-  .close-menu{
+  .close-menu {
     align-self: flex-end;
     padding: 20px 15px;
   }
-
   .open-menu:focus:not(:focus-visible),
-  .close-menu:focus:not(:focus-visible){
+  .close-menu:focus:not(:focus-visible) {
     outline: none;
-  } 
-
-  /*Sección Exploración responsive*/
-  .exploración-Space-section {
-    padding: 100px 40px;
   }
-
-  .content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .text-video, .exploración-info {
-    width: 100%;
-  }
-
-  .text-video h1 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .video-container {
-    padding-bottom: 56.25%; 
-    width: 100%;
-  }
-
-  /* Sección del Formulario responsive*/
-  .formulario-section {
-    padding: 50px;
-  }
-
-  .container-inscrption {
-    width: 90%; /* Ajusta el ancho para pantallas pequeñas */
-    padding: 15px;
-  }
-
-  /* Pie de Página (Footer) responsive */
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .footer-colum {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .footer-bottom p {
-    font-size: 1.2rem;
-  } 
 }
