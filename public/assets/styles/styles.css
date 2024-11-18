@@ -530,7 +530,7 @@ body {
   }
 
   .Container_SN {
-    display:none
+    display: none;
   }
   /* Ajustes para el menú */
   .menu-horizontal {
