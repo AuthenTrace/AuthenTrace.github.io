@@ -67,6 +67,7 @@ html {
     color: white;
     text-align: center;
     padding: 120px 20px;
+    cursor: pointer;
   }
   
   .servicios-section h1 {
