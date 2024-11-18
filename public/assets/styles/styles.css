@@ -529,6 +529,9 @@ body {
     margin: 0; /* Remueve cualquier margen adicional */
   }
 
+  .Container_SN {
+    display:none
+  }
   /* Ajustes para el menú */
   .menu-horizontal {
     flex-direction: column;
