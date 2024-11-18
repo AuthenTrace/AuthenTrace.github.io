@@ -481,3 +481,123 @@ body {
   text-decoration: none;
   color: darkblue;
 }
+
+
+/*Configuración para celular (Responsive)*/
+@media (max-width:768px) {
+  .menu-horizontal{
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #151326;
+    height: 100%;
+    overflow-y: auto;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: opacity 0.3s transform 0.3s;
+    z-index: 999;
+  }
+
+  .menu-horizontal.menu_opened{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+  .menu-horizontal li{
+    padding: 0;
+  }
+  .menu-horizontal a{
+    color: #ffffff;
+    line-height: 70px;
+    font-size: 25px;
+    padding: 10px 0;
+  }
+  .menu-horizontal a:hover,
+  .menu-horizontal a.selected{
+    color: #6866cd;
+    text-decoration: underline;
+  }
+
+  .menu-horizontal a:focus{
+    outline: 2px dashed #decbf0;
+    outline-offset: 4px;
+  }
+  .menu-horizontal a::after{
+    content: none;
+  }
+
+  /*configuración para que aparesca el menú*/
+  .open-menu,
+  .close-menu{
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 10000;
+    margin-right: 30px;
+  }
+  .close-menu{
+    align-self: flex-end;
+    padding: 20px 15px;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible){
+    outline: none;
+  } 
+
+  /*Sección Exploración responsive*/
+  .exploración-Space-section {
+    padding: 100px 40px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-video, .exploración-info {
+    width: 100%;
+  }
+
+  .text-video h1 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .video-container {
+    padding-bottom: 56.25%; 
+    width: 100%;
+  }
+
+  /* Sección del Formulario responsive*/
+  .formulario-section {
+    padding: 50px;
+  }
+
+  .container-inscrption {
+    width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+    padding: 15px;
+  }
+
+  /* Pie de Página (Footer) responsive */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .footer-colum {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom p {
+    font-size: 1.2rem;
+  } 
+}
