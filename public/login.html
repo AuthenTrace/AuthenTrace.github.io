@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mi cuenta</title>
-    <link rel="stylesheet" href="assets/styles/styleslogin.css" />
+    <link rel="stylesheet" href="styleslogin.css" />
     <link rel="stylesheet" href="https://unpkg.com/remixicon@2.5.0/fonts/remixicon.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=M+PLUS+Rounded+1c&family=Advent+Pro&family=Afacad&display=swap" rel="stylesheet">
   </head>
@@ -13,21 +13,21 @@
     <body style="background-color: #FFFF">
        <!-- MENU -->
     <nav class="topheader">
-      <a href="../index.html" class="logo">
-        <img height="80" width="120" src="assets/images/logo2.png" alt="" />
+      <a href="index.html" class="logo">
+        <img height="80" width="120" src="img/logo2.png" alt="" />
       </a>
 
       <ul class="menu-horizontal">
         <li>
-          <a href="../index.html" class="home-link">HOME</a>
+          <a href="index.html" class="home-link">HOME</a>
         </li>
-        <li><a href="../index.html#Servicios">SERVICIOS</a></li>
+        <li><a href="index.html#Servicios">SERVICIOS</a></li>
         <li>
-          <a href="../index.html#Nosotros">NOSOTROS</a>
+          <a href="index.html#Nosotros">NOSOTROS</a>
         </li>
 
         <li>
-          <a href="../index.html#Soporte">SOPORTE</a>
+          <a href="index.html#Soporte">SOPORTE</a>
         </li>
 
         <li>
@@ -37,7 +37,7 @@
     </nav>
 
 
-<section class="form-section">
+    <section class="form-section">
       <!-- Radio Buttons para alternar entre las secciones -->
       <input type="radio" id="toggle-register" name="toggle" checked />
       <input type="radio" id="toggle-login" name="toggle" />
@@ -117,33 +117,10 @@
       </div>
     </section>
 
-  <!-- Sección Iniciar Sesión -->
-  <div class="login-container" id="Login" style="display: none;">
-    <form name="form" method="post" action="">
-      <fieldset>
-        <legend>Iniciar Sesión</legend>
-        <ul>
-          <li>
-            <label>Correo Electrónico:</label>
-            <input type="text" name="email" size="30" placeholder="CORREO ELECTRONICO*" />
-          </li>
-          <li>
-            <label>Contraseña:</label>
-            <input type="password" name="password" size="30" placeholder="CONTRASEÑA*" />
-          </li>
-          <li>
-            <input type="checkbox" name="recordar" value="yes" />
-            Recordarme
-          </li>
-        </ul>
-        <input type="submit" class="btn_submit" value="Iniciar Sesión" />
-      </fieldset>
-    </form>
-  </div>
-</section>
 
 
-<!-- footer -->
+
+    <!-- footer -->
     <footer class="footer-section">
       <div class="footer-container">
         <!-- Columna 1: SHOP -->
@@ -211,7 +188,10 @@
         </div>
       </div>
 
-          <script src="public/assets/scripts/login.js"></script>
+
+    <script src ="public/assets/scripts/login.js"> </script>
+
 
 </body>
 </html>
+
